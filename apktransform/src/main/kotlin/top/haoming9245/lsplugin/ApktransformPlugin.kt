@@ -1,4 +1,4 @@
-package org.lsposed.lsplugin
+package top.haoming9245.lsplugin
 
 import com.android.build.api.artifact.SingleArtifact
 import com.android.build.api.variant.ApplicationAndroidComponentsExtension

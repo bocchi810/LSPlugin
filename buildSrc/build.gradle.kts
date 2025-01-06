@@ -11,7 +11,7 @@ gradlePlugin {
     plugins {
         register("LSPlugin") {
             id = "LSPlugin"
-            implementationClass = "org.lsposed.lsplugin.PublishPlugin"
+            implementationClass = "top.haoming9245.lsplugin.PublishPlugin"
         }
     }
 }
@@ -25,5 +25,5 @@ sourceSets {
 }
 
 dependencies {
-    implementation(kotlin("gradle-plugin", "1.9.23"))
+    implementation(kotlin("gradle-plugin", "2.1.0"))
 }

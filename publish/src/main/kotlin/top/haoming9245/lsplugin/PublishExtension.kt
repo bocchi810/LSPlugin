@@ -1,4 +1,4 @@
-package org.lsposed.lsplugin
+package top.haoming9245.lsplugin
 
 import org.gradle.api.publish.PublicationContainer
 import org.gradle.api.publish.maven.MavenPom

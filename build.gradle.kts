@@ -3,5 +3,5 @@ plugins {
 }
 
 subprojects {
-    group = "org.lsposed.lsplugin"
+    group = "top.haoming9245.lsplugin"
 }

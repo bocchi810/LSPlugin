@@ -1,4 +1,4 @@
-package org.lsposed.lsplugin
+package top.haoming9245.lsplugin
 
 import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.lib.Repository

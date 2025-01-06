@@ -7,14 +7,14 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
 
-version = "1.1"
+version = "1.2"
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 dependencies {
@@ -22,26 +22,26 @@ dependencies {
 }
 
 publish {
-    githubRepo = "LSPosed/LSPlugin"
-    publishPlugin("$group.jgit", "jgit", "org.lsposed.lsplugin.JGitPlugin") {
+    githubRepo = "bocchi810/LSPlugin"
+    publishPlugin("$group.jgit", "jgit", "top.haoming9245.lsplugin.JGitPlugin") {
         name = "JGit"
         description = "Git plugin for Gradle"
-        url = "https://github.com/LSPosed/LSPlugin"
+        url = "https://github.com/bocchi810/LSPlugin"
         licenses {
             license {
                 name = "Apache License 2.0"
-                url = "https://github.com/LSPosed/LSPlugin/blob/master/LICENSE.txt"
+                url = "https://github.com/bocchi810/LSPlugin/blob/master/LICENSE.txt"
             }
         }
         developers {
             developer {
-                name = "LSPosed"
+                name = "LSPosed & bocchi810"
                 url = "https://lsposed.org"
             }
         }
         scm {
-            connection = "scm:git:https://github.com/LSPosed/LSPlugin.git"
-            url = "https://github.com/LSPosed/LSPlugin"
+            connection = "scm:git:https://github.com/bocchi810/LSPlugin.git"
+            url = "https://github.com/bocchi810/LSPlugin"
         }
     }
 }

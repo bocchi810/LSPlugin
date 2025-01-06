@@ -7,14 +7,14 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
 
-version = "1.6"
+version = "1.7"
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 dependencies {
@@ -22,26 +22,26 @@ dependencies {
 }
 
 publish {
-    githubRepo = "LSPosed/LSPlugin"
-    publishPlugin("$group.resopt", "resopt", "org.lsposed.lsplugin.ResoptPlugin") {
+    githubRepo = "bocchi810/LSPlugin"
+    publishPlugin("$group.resopt", "resopt", "top.haoming9245.lsplugin.ResoptPlugin") {
         name = "ResOpt"
         description = "Android resources optimizer plugin"
-        url = "https://github.com/LSPosed/LSPlugin"
+        url = "https://github.com/bocchi810/LSPlugin"
         licenses {
             license {
                 name = "Apache License 2.0"
-                url = "https://github.com/LSPosed/LSPlugin/blob/master/LICENSE.txt"
+                url = "https://github.com/bocchi810/LSPlugin/blob/master/LICENSE.txt"
             }
         }
         developers {
             developer {
-                name = "LSPosed"
+                name = "LSPosed & bocchi810"
                 url = "https://lsposed.org"
             }
         }
         scm {
-            connection = "scm:git:https://github.com/LSPosed/LSPlugin.git"
-            url = "https://github.com/LSPosed/LSPlugin"
+            connection = "scm:git:https://github.com/bocchi810/LSPlugin.git"
+            url = "https://github.com/bocchi810/LSPlugin"
         }
     }
 }
